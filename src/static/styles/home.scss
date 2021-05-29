@@ -1,0 +1,201 @@
+#home {
+  .banner-1 {
+    width: 100%;
+    aspect-ratio: 2;
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    .info {
+      position: absolute;
+      top: 50%;
+      right: 128px;
+      transform: translateY(-50%);
+      h1 {
+        font-size: 5rem;
+        color: var(--text-color3);
+        font-family: font5;
+        font-weight: 600;
+        text-shadow: 0px 0px 10px rgba(212, 136, 116, 0.562);
+        img {
+          width: 128px;
+        }
+      }
+      p {
+        text-align: right;
+        font-size: 1.6rem;
+        font-family: font4;
+        font-weight: bolder;
+      }
+    }
+  }
+  .about {
+    padding: 75px;
+    padding-bottom: 45;
+    background: rgba(248, 228, 224, 0.438);
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .info {
+        width: 45%;
+        h1 {
+          font-size: 3rem;
+          font-family: font6;
+          position: relative;
+          opacity: 0.9;
+          display: inline-block;
+          padding-bottom: 12px;
+        }
+        h1::before {
+          content: "";
+          position: absolute;
+          width: 80%;
+          height: 2px;
+          background: var(--text-color);
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        p {
+          font-family: font4;
+          font-weight: bold;
+          font-size: 1.4rem;
+        }
+      }
+      .description {
+        width: 40%;
+        p {
+          font-family: font4;
+          font-weight: bold;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .see-more {
+      width: 100%;
+      margin-top: 40px;
+      text-align: center;
+      height: 2rem;
+      a {
+        font-family: font4;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--text-color);
+        i {
+          font-size: 1rem;
+        }
+      }
+      a:hover {
+        font-size: 1.6rem;
+        transition: ease-in-out .3s;
+        position: relative;
+      }
+    }
+  }
+
+  .partial {
+    width: 100%;
+    padding: 75px;
+    background-image: url("../images/partial.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    .partial-container {
+      h1 {
+        font-family: font7;
+        font-size: 4rem;
+        text-align: center;
+        color:rgb(255, 248, 234);
+        text-shadow: -1px 0 rgb(199, 164, 87), 0 1px rgb(199, 164, 87), 1px 0 rgb(199, 164, 87), 0 -1px rgb(199, 164, 87)
+      }
+      .partials {
+        display: flex;
+        margin-top: 45px;
+        .partial-wrapper {
+          text-align: center;
+          width: 33.33333%;
+          span {
+            font-family: font6;
+            font-weight: bold;
+            font-size: 12rem;
+            color: #FF9F10;
+            text-shadow: 10px black;
+            font-size-adjust: 1.2;
+          }
+          h5 {
+            width: 60%;
+            margin: 0 auto;
+            font-family: font4;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .reviews {
+    // background-image: url("../images/review.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px;
+    width: 100%;
+    aspect-ratio: 2.2;
+    .reviews-container {
+      h1 {
+        font-family: font3;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--text-color);
+        font-weight: bold;
+        font-size: 3rem;
+        color: var(--text-color2)
+      }
+      .review-wrapper {
+        p {
+          font-family: font2;
+          font-size: 2rem;
+          text-align: center;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  .email {
+    .email-container {
+      padding: 60px;
+      border-top: 1px solid rgba(209, 209, 209, 0.952);
+    }
+    label {
+      display: block; 
+      font-family: font3;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    input {
+      width: 80%;
+      display: block;
+      font-family: font3;
+      margin: 32px auto;
+      padding: 8px 16px;
+      font-size: 1.4rem;
+      border: 1px solid rgb(231, 231, 231);
+    }
+    button {
+      border-radius: 8888888888px;
+      width: 208px;
+      display: block;
+      margin: 0 auto;
+      padding: 16px 16px;
+      font-family: font4;
+      font-weight: bold;
+      font-size: 1.4rem;
+      background-color: var(--text-color2);
+      color: white;
+    }
+  }
+}
