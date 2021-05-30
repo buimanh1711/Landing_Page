@@ -6,26 +6,33 @@
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-    position: relative;
+    .banner-container {
+      position: relative;
+    }
     .info {
       position: absolute;
-      top: 50%;
-      right: 128px;
       transform: translateY(-50%);
+      width: 100%;
+      padding-top: 100%;
       h1 {
-        font-size: 5rem;
-        color: var(--text-color3);
-        font-family: font5;
-        font-weight: 600;
-        text-shadow: 0px 0px 10px rgba(212, 136, 116, 0.562);
-        img {
-          width: 128px;
-        }
+        font-size: 4rem;
+        color: #494E5B;
+        font-family: 'Lora', serif;
+        font-weight: 800;
+        padding: 20px 25px;
+        display: inline-block;
+        background: #82D3D6;
+        position: absolute;
+        top: 80%;
+        right: 4%;
       }
       p {
+        position: absolute;
+        top: 92%;
+        right: 4%;
         text-align: right;
         font-size: 1.6rem;
-        font-family: font4;
+        font-family: 'Lora', serif;
         font-weight: bolder;
       }
     }
@@ -144,7 +151,6 @@
     background-repeat: no-repeat;
     padding: 90px;
     width: 100%;
-    aspect-ratio: 2.2;
     .reviews-container {
       h1 {
         font-family: font3;

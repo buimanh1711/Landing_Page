@@ -1,14 +1,28 @@
-@media (max-width: 1199.98px) {
+@media (min-width: 1400px) {
+  #home .banner-1 .info h1 {
+    top: 82%;
+  }
+  #home .banner-1 .info p {
+    top: 94%;
+  }
 }
 @media (max-width: 991.98px) {
+  #home .banner-1 .info p {
+    top: 98%;
+  }
 }
 @media (max-width: 768px) {
+  #home .banner-1 .info p {
+    top: 97%;
+    font-size: 1.2rem;
+  }
   #main-layout .header .header-container .logo .logo-wrapper {
     width: 80px;
   }
   #home .banner-1 .info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+    top: 76%;
   }
   #home .banner-1 .info {
     right: unset;
@@ -77,8 +91,17 @@
   }
 }
 @media (max-width: 575.98px) {
+  #home .banner-1 .info h1 {
+    font-size: 2rem;
+    top: -21%;
+  }
+  #home .banner-1 .info p {
+    top: 0;
+    font-size: 1rem;
+  }
   #home .banner-1 {
     aspect-ratio: unset;
+    background-position: center;
     padding-top: 100%;
   }
   #home .partial .partial-container .partials .partial-wrapper h5 {
@@ -87,13 +110,7 @@
 }
 
 @media (max-width: 479.98px) {
-  #home .banner-1 .info h1 {
-    font-size: 3rem;
-  }
-  #home .banner-1 .info p {
-    font-size: 1.2rem;
-  }
-  #home .about .about-container .info h1{
+  #home .about .about-container .info h1 {
     font-size: 2rem;
   }
   #home .about .about-container .info p {
@@ -119,7 +136,8 @@
     font-size: 1.4rem;
     margin-bottom: 16px;
   }
-  #main-layout .footer .bot-content .info p, #main-layout .footer .bot-content .info a {
+  #main-layout .footer .bot-content .info p,
+  #main-layout .footer .bot-content .info a {
     font-size: 1rem;
   }
   #main-layout .footer .bot-content .info .social-networks {
@@ -136,5 +154,4 @@
   #main-layout .footer .bot-content .mobile-app a {
     width: 45%;
   }
-  
 }

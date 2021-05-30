@@ -1,14 +1,17 @@
 const HomeBanner1 = () => {
   return (
     <div className='banner-1'>
-      <div className='info'>
-        <h1>
-          <img src='/images/logo.png' />
-          ENGMATCH
+      <div className='container'>
+        <div className='banner-container'>
+          <div className='info'>
+            <h1>
+              EngMatch
         </h1>
-        <p>
-          UNLOCK YOUR SPEAKING ABILITIES
-        </p>
+            <p>
+              Bà MỐI cho những tâm những tâm hồn yêu tiếng Anh
+            </p>
+          </div>
+        </div>
       </div>
     </div >
   )

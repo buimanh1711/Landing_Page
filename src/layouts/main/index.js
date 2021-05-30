@@ -60,13 +60,13 @@ const MainLayout = ({ children }) => {
                 }
               </ul>
               <div className='social-networks'>
-                <a href='https://facebook.com/ttuwii'>
+                <a href='https://www.facebook.com/engmatch'>
                   <i style={{ color: '#58ACFA' }} className="fab fa-facebook"></i>
                 </a>
-                <a href='https://facebook.com/ttuwii'>
-                  <i style={{ color: 'white' }} className="fab fa-twitter"></i>
+                <a href='https://www.instagram.com/engmatch'>
+                  <i style={{ color: '#FA8258' }} className="fab fa-instagram-square"></i>
                 </a>
-                <a href='https://facebook.com/ttuwii'>
+                <a href='https://www.youtube.com/channel/UCVXrXbtfT_yVgiOo9bAXgtw'>
                   <i style={{ color: '#FA5858' }} className="fab fa-youtube"></i>
                 </a>
               </div>
@@ -96,17 +96,17 @@ const MainLayout = ({ children }) => {
                 </Link>
               </div>
               <div className='info'>
-                <p>Phone number: 0961 545 373</p>
+                <p>Phone number: 0869 246 882</p>
                 <p>Email address: Engmatch2021@gmail.com</p>
-                <p>Mailing address: Havard Nhon, North Tu Liem, HN</p>
+                <p>Mailing address: 144 Xuan Thuy, Dich Vong Hau, Cau Giay, Ha Noi</p>
                 <div className='social-networks'>
-                  <a href='https://facebook.com/ttuwii'>
+                  <a href='https://www.facebook.com/engmatch'>
                     <i style={{ color: '#58ACFA' }} className="fab fa-facebook"></i>
                   </a>
-                  <a href='https://facebook.com/ttuwii'>
-                    <i style={{ color: 'white' }} className="fab fa-twitter"></i>
+                  <a href='https://www.instagram.com/engmatch'>
+                    <i style={{ color: '#FA8258' }} className="fab fa-instagram-square"></i>
                   </a>
-                  <a href='https://facebook.com/ttuwii'>
+                  <a href='https://www.youtube.com/channel/UCVXrXbtfT_yVgiOo9bAXgtw'>
                     <i style={{ color: '#FA5858' }} className="fab fa-youtube"></i>
                   </a>
                 </div>
