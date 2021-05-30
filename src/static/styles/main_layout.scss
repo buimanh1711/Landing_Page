@@ -14,7 +14,7 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-    background-image: linear-gradient(rgb(126, 227, 235), rgba(162, 238, 243, 0.226), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.473),rgba(255, 255, 255, 0.116), rgba(255, 255, 255, 0));
     backdrop-filter: blur(1px);
     .header-container {
       padding-top: 16px;
@@ -22,7 +22,7 @@
       align-items: center;
       justify-content: space-between;
       a {
-        color: var(--text-color);
+        color: var(--text-color3);
         font-weight: bolder;
       }
       .logo {

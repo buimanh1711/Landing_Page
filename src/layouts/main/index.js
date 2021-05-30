@@ -5,12 +5,17 @@ const MainLayout = ({ children }) => {
   const location = useLocation()
   const asPath = location.pathname || '/'
   const [header, setHeader] = useState(true)
+  const [scrollBtn, setScrollBtn] = useState(false)
 
   useEffect(() => {
     let currentSticky = 300
     window.addEventListener('scroll', () => {
       const sticky = window.pageYOffset;
-
+      if (sticky > 400) {
+        setScrollBtn(true)
+      } else {
+        setScrollBtn(false)
+      }
       if (sticky > currentSticky && header) {
         setHeader(false)
       } else {
@@ -18,8 +23,10 @@ const MainLayout = ({ children }) => {
         setTimeout(() => {
           if (header && currentSticky > 300) {
             setHeader(false)
+          } else {
+            return
           }
-        }, 5000)
+        }, 7000)
       }
       currentSticky = sticky <= 0 ? 0 : sticky
     })
@@ -40,8 +47,19 @@ const MainLayout = ({ children }) => {
     }
   ]
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <div id='main-layout'>
+      {
+        scrollBtn &&
+        <button style={{zIndex: 10000, transition: 'ease-in 1s'}} id='scroll-top' onClick={scrollTop}><i className="fas fa-arrow-up"></i></button>
+      }
       <div className={header ? 'header on' : 'header off'}>
         <div className='container'>
           <div className='header-container'>

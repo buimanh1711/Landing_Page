@@ -6,12 +6,14 @@ import { WOW } from 'wowjs'
 import './static/styles/common.css'
 import './static/styles/global.scss'
 import './static/styles/main_layout.scss'
+import './static/styles/about.scss'
 import './static/styles/home.scss'
 
 import './static/styles/responsive.scss'
 
 import MainLayout from './layouts/main'
 import Home from './pages/home'
+import About from './pages/about'
 
 function App() {
   const scrollTop = () => {
@@ -57,13 +59,26 @@ function App() {
       live: true
     })
 
-    reviewsWow.init()
+    partialsWow.init()
+
+    const aboutBannerWow = new WOW({
+      boxClass: 'about-banner',
+      offset: 0,
+      mobile: false,
+      live: true
+    })
+
+    aboutBannerWow.init()
   }, [])
 
   return (
     <div className='my-app'>
-      <button id='scroll-top' onClick={scrollTop}><i className="fas fa-arrow-up"></i></button>
       <Switch>
+        <Route path='/about'>
+          <MainLayout>
+            <About />
+          </MainLayout>
+        </Route>
         <Route path='/'>
           <MainLayout>
             <Home />
