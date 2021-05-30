@@ -78,7 +78,8 @@
 }
 @media (max-width: 575.98px) {
   #home .banner-1 {
-    aspect-ratio: 1;
+    aspect-ratio: unset;
+    padding-top: 100%;
   }
 }
 

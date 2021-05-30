@@ -197,5 +197,9 @@
       background-color: var(--text-color2);
       color: white;
     }
+    button:hover {
+      background: rgb(90, 173, 139);
+      transition: ease-in-out .1s;
+    }
   }
 }
