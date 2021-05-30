@@ -6,18 +6,19 @@ const MainLayout = ({ children }) => {
   const asPath = location.pathname || '/'
   const [header, setHeader] = useState(true)
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', () => {
-  //     const sticky = window.pageYOffset;
+  useEffect(() => {
+    let currentSticky = 300
+    window.addEventListener('scroll', () => {
+      const sticky = window.pageYOffset;
 
-  //     if (sticky >= 170 && !header) {
-  //       setHeader(true)
-  //     }
-  //     else if (sticky < 170 && header) {
-  //       setHeader(false)
-  //     }
-  //   });
-  // }, [])
+      if (sticky > currentSticky && header) {
+        setHeader(false)
+      } else {
+        setHeader(true)
+      }
+      currentSticky = sticky <= 0 ? 0 : sticky
+    })
+  }, [])
 
   const menu = [
     {
@@ -59,13 +60,13 @@ const MainLayout = ({ children }) => {
                 }
               </ul>
               <div className='social-networks'>
-                <a href='https://facebook.com'>
+                <a href='https://facebook.com/ttuwii'>
                   <i style={{ color: '#58ACFA' }} className="fab fa-facebook"></i>
                 </a>
-                <a href='https://facebook.com'>
+                <a href='https://facebook.com/ttuwii'>
                   <i style={{ color: 'white' }} className="fab fa-twitter"></i>
                 </a>
-                <a href='https://facebook.com'>
+                <a href='https://facebook.com/ttuwii'>
                   <i style={{ color: '#FA5858' }} className="fab fa-youtube"></i>
                 </a>
               </div>
@@ -99,13 +100,13 @@ const MainLayout = ({ children }) => {
                 <p>Email address: Engmatch2021@gmail.com</p>
                 <p>Mailing address: Havard Nhon, North Tu Liem, HN</p>
                 <div className='social-networks'>
-                  <a href='https://facebook.com'>
+                  <a href='https://facebook.com/ttuwii'>
                     <i style={{ color: '#58ACFA' }} className="fab fa-facebook"></i>
                   </a>
-                  <a href='https://facebook.com'>
+                  <a href='https://facebook.com/ttuwii'>
                     <i style={{ color: 'white' }} className="fab fa-twitter"></i>
                   </a>
-                  <a href='https://facebook.com'>
+                  <a href='https://facebook.com/ttuwii'>
                     <i style={{ color: '#FA5858' }} className="fab fa-youtube"></i>
                   </a>
                 </div>

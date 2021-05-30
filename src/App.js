@@ -7,6 +7,8 @@ import './static/styles/global.scss'
 import './static/styles/main_layout.scss'
 import './static/styles/home.scss'
 
+import './static/styles/responsive.scss'
+
 import MainLayout from './layouts/main'
 import Home from './pages/home'
 

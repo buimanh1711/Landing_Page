@@ -1,0 +1,136 @@
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 768px) {
+  #main-layout .header .header-container .logo .logo-wrapper {
+    width: 80px;
+  }
+  #home .banner-1 .info h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  #home .banner-1 .info {
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -42%);
+  }
+  #home .about {
+    padding: 32px;
+  }
+  #home .about .about-container {
+    flex-wrap: wrap;
+  }
+  #home .about .about-container .info {
+    width: 100%;
+    text-align: center;
+  }
+  #home .about .about-container .description {
+    width: 100%;
+    text-align: center;
+  }
+  #home .about .see-more {
+    margin-top: 8px;
+  }
+  #home .partial {
+    padding: 32px;
+  }
+  #home .partial .partial-container .partials {
+    flex-wrap: wrap;
+  }
+  #home .partial .partial-container .partials .partial-wrapper {
+    width: 100%;
+  }
+  #home .reviews {
+    padding: 32px;
+  }
+  #home .reviews .reviews-container .review-wrapper p {
+    font-size: 1rem;
+  }
+  #home .email .email-container {
+    padding: 32px;
+  }
+  #home .email label {
+    font-size: 1.5rem;
+  }
+  #home .email input {
+    width: 100%;
+    margin: 20px auto;
+  }
+  #home .email button {
+    padding: 10px 24px;
+    width: 176px;
+  }
+  #main-layout .footer {
+    padding: 32px;
+  }
+  #main-layout .footer .bot-content {
+    flex-wrap: wrap;
+  }
+  #main-layout .footer .bot-content .mobile-app {
+    width: 100%;
+    order: 1;
+    justify-content: space-between;
+  }
+  #main-layout .footer .bot-content .info {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  #home .banner-1 {
+    aspect-ratio: 1;
+  }
+}
+
+@media (max-width: 479.98px) {
+  #home .banner-1 .info h1 {
+    font-size: 3rem;
+  }
+  #home .banner-1 .info p {
+    font-size: 1.2rem;
+  }
+  #home .about .about-container .info h1{
+    font-size: 2rem;
+  }
+  #home .about .about-container .info p {
+    font-size: 1rem;
+  }
+  #home .about .about-container .description p {
+    font-size: 1rem;
+  }
+  #home .partial {
+    padding: 18px;
+  }
+  #home .partial .partial-container h1 {
+    font-size: 3rem;
+  }
+  #home .reviews .reviews-container h1 {
+    font-size: 2rem;
+  }
+  #main-layout .footer h1 {
+    font-size: 2rem;
+  }
+  #main-layout .footer p.slogan {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+  #main-layout .footer .bot-content .info p, #main-layout .footer .bot-content .info a {
+    font-size: 1rem;
+  }
+  #main-layout .footer .bot-content .info .social-networks {
+    margin-right: 0;
+    text-align: center;
+  }
+  #main-layout .footer .bot-content .info .social-networks a i {
+    font-size: 1.8rem;
+  }
+  #main-layout .footer .bot-content .mobile-app p {
+    font-size: 1.4rem;
+    margin-top: 12px;
+  }
+  #main-layout .footer .bot-content .mobile-app a {
+    width: 45%;
+  }
+  
+}
