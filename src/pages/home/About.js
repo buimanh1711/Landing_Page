@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const HomeAbout = () => {
   return (
-    <div className='about'>
+    <div className='about animate__animated animate__rubberBand'>
       <div className='container'>
         <div className='about-container'>
           <div className='info'>

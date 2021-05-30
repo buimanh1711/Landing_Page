@@ -32,3 +32,15 @@
   color: rgb(253, 200, 180);
 }
 
+#scroll-top {
+  position: fixed;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  background:rgb(248, 205, 189);
+  color: rgb(111, 179, 184);
+  border: 2px solid rgb(111, 179, 184);
+}

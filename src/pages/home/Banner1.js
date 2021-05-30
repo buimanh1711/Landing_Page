@@ -1,6 +1,6 @@
 const HomeBanner1 = () => {
   return (
-    <div className='banner-1'>
+    <div className='banner-1 animate__animated animate__pulse'>
       <div className='container'>
         <div className='banner-container'>
           <div className='info'>
@@ -8,7 +8,7 @@ const HomeBanner1 = () => {
               EngMatch
         </h1>
             <p>
-              Bà MỐI cho những tâm những tâm hồn yêu tiếng Anh
+              Matchmaker of English lovers
             </p>
           </div>
         </div>

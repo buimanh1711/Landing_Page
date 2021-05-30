@@ -14,7 +14,7 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-    background-image: linear-gradient(rgb(252, 252, 252), rgba(252, 252, 252, 0.568), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgb(126, 227, 235), rgba(162, 238, 243, 0.651), rgba(255, 255, 255, 0));
     backdrop-filter: blur(1px);
     .header-container {
       padding-top: 16px;
@@ -87,6 +87,7 @@
     background-position: left;
     background-repeat: no-repeat;
     padding-top: 95px;
+    padding-bottom: 32px;
     h1 {
       font-family: font1;
       font-size: 3rem;

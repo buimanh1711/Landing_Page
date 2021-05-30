@@ -9,7 +9,7 @@
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -32,23 +32,16 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>EngMatch</title>
 </head>
 
 <body class='scroll'>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <!-- Messenger Chat Plugin Code -->
+  <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-
-  <!-- Your Chat Plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
   <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "100282128441184");
-    chatbox.setAttribute("attribution", "biz_inbox");
     window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
@@ -60,10 +53,13 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="105681298395172">
+  </div>
   <div id="root"></div>
   <!--
       This HTML file is a template.

@@ -3,7 +3,7 @@ import MySlick from "../../global/Slick"
 const Reviews = () => {
   return (
     <>
-      <div className='reviews'>
+      <div className='reviews animate__animated animate__backInUp'>
         <div className='container'>
           <div className='reviews-container'>
             <h1><i className="far fa-comments"></i> Customer Reviews:</h1>

@@ -1,6 +1,6 @@
 const Partials = () => {
   return (
-    <div className='partial'>
+    <div className='partial animate__animated animate__pulse'>
       <div className='container'>
         <div className='partial-container'>
           <h1>
