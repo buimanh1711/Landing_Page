@@ -11,15 +11,13 @@ const Reviews = () => {
               <div className='review-wrapper'>
                 <p>
                   I'm an English beginner. At first, my speaking is very terrible, I even get a C in every test because of my horrible pronunciation and ideas. But only few days with Engmatch before my final exam, my speaking has a dramatically improvement. This program suggests me many useful ideas as well as vocabularies in every topics. I can also find partners with same problems and level with me to practice so that we can improve our skills together.
-
-                  Thanks Engmatch for helping us.
+                  <br />Thanks Engmatch for helping us.
               </p>
               </div>
               <div className='review-wrapper'>
                 <p>
-                  I'm an English beginner. At first, my speaking is very terrible, I even get a C in every test because of my horrible pronunciation and ideas. But only few days with Engmatch before my final exam, my speaking has a dramatically improvement. This program suggests me many useful ideas as well as vocabularies in every topics. I can also find partners with same problems and level with me to practice so that we can improve our skills together.
-
-                  Thanks Engmatch for helping us.
+                  I have learnt English for almost 6 years, and I've got an 6.0 in Speaking Test of IELTS. I were introduced this program by my friends, and we both register accounts for practicing. After 3 months spending time learning and practicing with this program, in my latest IELTS test, I've got an 7.0 in speaking. This program is not only an useful program for beginners to practice but also a suitable place for advanced students like me, it also provides me a teacher to help me improve my pronunciation, too. I was overdose by the IELTS topics that they updated in the websites. I believe that EngMatch is the best choice for English learners.
+                  <br />- Mai, ULIS-VNU
               </p>
               </div>
               <div className='review-wrapper'>

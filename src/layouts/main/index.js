@@ -15,6 +15,11 @@ const MainLayout = ({ children }) => {
         setHeader(false)
       } else {
         setHeader(true)
+        setTimeout(() => {
+          if (header && currentSticky > 300) {
+            setHeader(false)
+          }
+        }, 5000)
       }
       currentSticky = sticky <= 0 ? 0 : sticky
     })
