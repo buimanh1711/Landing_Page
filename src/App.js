@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
 import { WOW } from 'wowjs'
+import { Link, useLocation } from 'react-router-dom'
 
 import './static/styles/common.css'
 import './static/styles/global.scss'
@@ -16,6 +16,9 @@ import Home from './pages/home'
 import About from './pages/about'
 
 function App() {
+  const location = useLocation()
+  const asPath = location.pathname || '/'
+
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -59,7 +62,7 @@ function App() {
       live: true
     })
 
-    partialsWow.init()
+    reviewsWow.init()
 
     const aboutBannerWow = new WOW({
       boxClass: 'about-banner',
@@ -69,7 +72,38 @@ function App() {
     })
 
     aboutBannerWow.init()
+
+    const aboutVisionWow = new WOW({
+      boxClass: 'about-vision',
+      offset: 200,
+      mobile: false,
+      live: true
+    })
+
+    aboutVisionWow.init()
+
+    const aboutMissionWow = new WOW({
+      boxClass: 'about-mission',
+      offset: 300,
+      mobile: false,
+      live: true
+    })
+
+    aboutMissionWow.init()
+
+    const aboutValuenWow = new WOW({
+      boxClass: 'about-core-value',
+      offset: 400,
+      mobile: false,
+      live: true
+    })
+
+    aboutValuenWow.init()
   }, [])
+
+  useEffect(() => {
+    scrollTop()
+  }, [asPath])
 
   return (
     <div className='my-app'>

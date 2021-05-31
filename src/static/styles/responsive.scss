@@ -10,8 +10,29 @@
   #home .banner-1 .info p {
     top: 98%;
   }
+  #about .quote .quote-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #about .quote .quote-container .founder-info {
+    width: 60%;
+    order: 1;
+  }
+
+  #about .quote .quote-container .quote-content {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
+  #about .about-vision , #about .about-mission, #about .about-core-value {
+    padding: 45px 16px;
+  }
+
+  #about .about-vision .vision-container p, #about .about-mission .mission-container p, #about .about-core-value p {
+    text-align: left !important;
+    font-size: 1.2rem;
+  }
+
   #home .banner-1 .info p {
     top: 97%;
     font-size: 1.2rem;

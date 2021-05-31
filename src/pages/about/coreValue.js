@@ -1,10 +1,10 @@
-const AboutVision = () => {
+const AboutValue = () => {
   return (
-    <div className='about-vision animate__animated animate__backInRight'>
+    <div className='about-core-value animate__animated animate__backInLeft'>
       <div className='container'>
-        <div className='vision-container'>
+        <div className='core-value-container'>
           <h1>
-            Vision
+            Core Value
             <span></span>
           </h1>
           <p>
@@ -16,4 +16,4 @@ const AboutVision = () => {
   )
 }
 
-export default AboutVision
+export default AboutValue
